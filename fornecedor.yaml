@@ -2,8 +2,18 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+    properties:
+            hibernate:
+                format_sql: true
+    show-sql: true
   datasource:
     url: jdbc:mysql://localhost:3306/fornecedor
     username: root
     password: admin
         
+spring:
+    jpa:
+        properties:
+            hibernate:
+                format_sql: true
+        show-sql: true
